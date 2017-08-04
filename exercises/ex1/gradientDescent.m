@@ -29,8 +29,8 @@ theta = theta - (alpha*(1/m)*summation);
     % Save the cost J in every iteration    
     J_history(iter) = computeCost(X, y, theta);
 
-fprintf('Iteration number: %f',  iter);
-fprintf(' Cost: %f', J_history(iter));
+%fprintf('Iteration number: %f',  iter);
+%fprintf(' Cost: %f', J_history(iter));
 
 end
 
