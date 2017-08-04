@@ -19,9 +19,8 @@ function plotData(x, y)
 
 figure; %open new figure window with next available number
 plot(x, y, 'rx', 'MarkerSize', 10);
-xlabel('population');
-ylabel('profit');
-legend('hello', 'wello');
+xlabel('Population of City in 10,000s');
+ylabel('Profit in $10,000s');
 
 % ============================================================
 
