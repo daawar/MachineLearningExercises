@@ -28,16 +28,6 @@ ylabel('Exam 2 score');
 legend('Admitted','Not Admitted');
 
 hold off;
-
-
-
-
-
-
 % =========================================================================
-
-
-
-hold off;
 
 end
