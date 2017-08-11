@@ -20,7 +20,7 @@ grad = zeros(size(theta));
 z = X*theta;
 h = sigmoid(z);
 theta_reg = theta(2:size(theta));
-theta_reg_sq = theta_reg_sq.^2;
+theta_reg_sq = theta_reg.^2;
 theta_reg_sq_sum = sum(theta_reg_sq);
 
 cost_matrix = y.*log(h) + (1-y).*log(1-h);
@@ -29,7 +29,7 @@ J = (-1/m)*sum(cost_matrix(:)) + reg_term;
 
 
 theta_reg_grad = [0;theta_reg];
-grad = (1/m)*(X'*(h-y)) + (lambda/2*m).*theta_reg_grad;
+grad = (1/m)*(X'*(h-y)) + (lambda/m).*theta_reg_grad;
 
  
 % =============================================================
