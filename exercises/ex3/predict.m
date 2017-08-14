@@ -22,9 +22,19 @@ p = zeros(size(X, 1), 1);
 %
 
 
+X = [ones(m,1) X];
+
+hidden_layer1 = sigmoid(X*Theta1');
 
 
+m1 = size(hidden_layer1, 1);
+hidden_layer1 = [ones(m1, 1) hidden_layer1];
 
+
+output_layer = sigmoid(hidden_layer1*Theta2');
+
+
+[max_per_row p] = max(output_layer,[],2);
 
 
 
